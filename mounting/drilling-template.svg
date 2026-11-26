@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" width="200mm" height="280mm" font-family="Arial, Helvetica, sans-serif"><rect width="200" height="280" fill="#fff"/>
+<text x="10" y="12" font-size="5" text-anchor="start" font-weight="bold" fill="#111">Drilling template — print at 100% (Actual size), then check the 50 mm bar</text>
+<line x1="10" y1="18" x2="60" y2="18" stroke="#000" stroke-width="0.6"/>
+<text x="62" y="19.5" font-size="3.2" text-anchor="start" fill="#111">← must measure exactly 50 mm</text>
+<text x="14" y="29" font-size="3.8" text-anchor="start" font-weight="bold" fill="#111">Main box HB6128 — BOTTOM face (outside view, wall at the top edge)</text>
+<rect x="14" y="32" width="171" height="55" fill="none" stroke="#000" stroke-width="0.5"/>
+<text x="16" y="36" font-size="2.8" text-anchor="start" fill="#111">wall side</text>
+<circle cx="24" cy="59.5" r="1.5" fill="none" stroke="#000" stroke-width="0.35"/>
+<line x1="20.5" y1="59.5" x2="27.5" y2="59.5" stroke="#000" stroke-width="0.2"/><line x1="24" y1="56.0" x2="24" y2="63.0" stroke="#000" stroke-width="0.2"/>
+<text x="24" y="66.0" font-size="3" text-anchor="middle" fill="#111">drain 3 mm</text>
+<circle cx="44" cy="59.5" r="6.25" fill="none" stroke="#000" stroke-width="0.35"/>
+<line x1="35.75" y1="59.5" x2="52.25" y2="59.5" stroke="#000" stroke-width="0.2"/><line x1="44" y1="51.25" x2="44" y2="67.75" stroke="#000" stroke-width="0.2"/>
+<text x="44" y="70.75" font-size="3" text-anchor="middle" fill="#111">12V PG7 12.5 mm</text>
+<circle cx="72" cy="59.5" r="6.25" fill="none" stroke="#000" stroke-width="0.35"/>
+<line x1="63.75" y1="59.5" x2="80.25" y2="59.5" stroke="#000" stroke-width="0.2"/><line x1="72" y1="51.25" x2="72" y2="67.75" stroke="#000" stroke-width="0.2"/>
+<text x="72" y="70.75" font-size="3" text-anchor="middle" fill="#111">radar PG7 12.5 mm</text>
+<circle cx="161" cy="59.5" r="13.5" fill="none" stroke="#000" stroke-width="0.35"/>
+<line x1="145.5" y1="59.5" x2="176.5" y2="59.5" stroke="#000" stroke-width="0.2"/><line x1="161" y1="44.0" x2="161" y2="75.0" stroke="#000" stroke-width="0.2"/>
+<text x="161" y="78.0" font-size="3" text-anchor="middle" fill="#111">water in Ø27 (check your fitting)</text>
+<text x="14" y="94" font-size="2.8" text-anchor="start" fill="#111">← left end (board side)</text>
+<text x="185" y="94" font-size="2.8" text-anchor="end" fill="#111">right end (valve side) →</text>
+<text x="14" y="109" font-size="3.8" text-anchor="start" font-weight="bold" fill="#111">Main box — RIGHT side</text>
+<rect x="14" y="112" width="55" height="121" fill="none" stroke="#000" stroke-width="0.5"/>
+<text x="16" y="116" font-size="2.6" text-anchor="start" fill="#111">wall side ↓ left edge</text>
+<circle cx="41.5" cy="130" r="13.5" fill="none" stroke="#000" stroke-width="0.35"/>
+<line x1="26.0" y1="130" x2="57.0" y2="130" stroke="#000" stroke-width="0.2"/><line x1="41.5" y1="114.5" x2="41.5" y2="145.5" stroke="#000" stroke-width="0.2"/>
+<text x="41.5" y="148.5" font-size="3" text-anchor="middle" fill="#111">outlet Ø27</text>
+<text x="41.5" y="237" font-size="3" text-anchor="middle" fill="#111">bottom</text>
+<text x="84" y="109" font-size="3.8" text-anchor="start" font-weight="bold" fill="#111">Radar box HB6127 — end face</text>
+<rect x="84" y="112" width="90" height="55" fill="none" stroke="#000" stroke-width="0.5"/>
+<circle cx="129" cy="139.5" r="6.25" fill="none" stroke="#000" stroke-width="0.35"/>
+<line x1="120.75" y1="139.5" x2="137.25" y2="139.5" stroke="#000" stroke-width="0.2"/><line x1="129" y1="131.25" x2="129" y2="147.75" stroke="#000" stroke-width="0.2"/>
+<text x="129" y="150.75" font-size="3" text-anchor="middle" fill="#111">radar cable PG7 12.5 mm</text>
+<text x="84" y="182" font-size="3.6" text-anchor="start" font-weight="bold" fill="#111">Tips:</text>
+<text x="84" y="188" font-size="3.2" text-anchor="start" fill="#111">Tape the template on, centre-punch each cross, then drill.</text>
+<text x="84" y="194" font-size="3.2" text-anchor="start" fill="#111">Use a step drill for the 12.5 mm and 27 mm holes.</text>
+<text x="84" y="200" font-size="3.2" text-anchor="start" fill="#111">Box walls have ribs/screw posts: check inside first.</text>
+<text x="84" y="206" font-size="3.2" text-anchor="start" fill="#111">Measure your actual fittings: hole = thread size + 0.5 mm.</text>
+</svg>

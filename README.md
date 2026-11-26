@@ -4,7 +4,7 @@ An automatic pool top-up controller. An 80 GHz radar measures the distance to th
 
 ![The finished unit](images/finished-unit.png)
 
-**Guides:** [Build instructions](docs/BUILD.md) · [Adding it to Home Assistant with ESPHome](docs/ESPHOME.md)
+**Guides:** [Parts and tools](docs/PARTS.md) · [Build guide](docs/BUILD.md) · [Adding it to Home Assistant with ESPHome](docs/ESPHOME.md) · [Drilling template (PDF)](mounting/drilling-template.pdf)
 
 ## How it works
 
@@ -21,21 +21,7 @@ An automatic pool top-up controller. An 80 GHz radar measures the distance to th
 
 ## Parts
 
-| Part | Notes |
-|---|---|
-| ESP32 DevKit (WROOM-32, 30-pin) | runs ESPHome |
-| DFRobot SEN0676 80 GHz radar level sensor | UART Modbus-RTU, 115200 8N1, address 0x01, 3.5–5V |
-| 12V solenoid valve, 3/4" BSP, normally closed (SparkFun ROB-10456) | 330 mA coil |
-| HW-517 dual MOSFET module | low-side switch for the valve |
-| DFRobot DFR1015 buck converter | 12V → 5V (factory 5V pad) |
-| 1N4001 diode | across the valve coil |
-| 12V 2A plugpack + barrel-to-screw adapter | the only power input |
-| 7 × 9 cm perfboard | |
-| 3 × 1x20 female header, 1 × 1x40 male header | so every module plugs in and can be removed |
-| 3 × 2-pin 5 mm screw terminals | 12V in, plus two clipped together for the radar |
-| PG7 cable glands | power and radar cables |
-| Jaycar HB6128 sealed ABS box, 171 × 121 × 55 | board and valve |
-| Jaycar HB6127 flanged box, 115 × 90 × 55 | radar, which reads through the lid; no lens hole |
+The full parts and tools list, with shop codes, is in **[docs/PARTS.md](docs/PARTS.md)**. The main items are an ESP32, a DFRobot SEN0676 radar, a 12V 3/4" solenoid valve, an HW-517 MOSFET module, a DFR1015 buck converter, a 12V 2A plugpack, and two Jaycar boxes (HB6128 and HB6127).
 
 ## Wiring
 
@@ -67,9 +53,9 @@ ESPHome config: [`esphome/pool-level.yaml`](esphome/pool-level.yaml). For step-b
 
 ![Inside the main box](mounting/main-box-inside.png)
 
-- The main box goes on a wall, with the valve at the bottom and the board above it. The pipes go out through the side walls, the cables come in through PG7 glands in the bottom wall, and there is a 3 mm drain hole at the lowest corner.
+- Main box on the wall: board on the left, valve **upright on the right** with flow going up. Water comes in through the bottom, and the outlet leaves the right side near the top. The hose then runs **up beside the box** and turns **90° out from the wall** at the top. Cables enter through PG7 glands in the bottom, and there's a 3 mm drain hole. Nothing goes through the top.
 - For power, cut the DC lead about 10 cm from the plug, feed it through the gland, and rejoin it stripe to stripe so the polarity stays the same. The plugpack itself must be plugged in under cover or into a weatherproof outlet.
 - The radar box sits on a 45° timber wedge (or a hinge and slotted strap) about 110 mm below the main box. Check the angle with a phone level app.
 - Before sealing the radar box, bench-test that the reading through the lid matches a tape measure.
 
-Full step-by-step instructions are in [docs/BUILD.md](docs/BUILD.md).
+Full step-by-step instructions, with a picture for each stage, a wire checklist and troubleshooting, are in [docs/BUILD.md](docs/BUILD.md).

@@ -29,21 +29,22 @@
 <text x="310.0" y="330.5" font-size="14" fill="#d8dde0" text-anchor="middle" font-weight="bold">POOL TOP-UP</text>
 <rect x="273" y="396" width="14" height="12" fill="#1d2328"/>
 <rect x="333" y="396" width="14" height="12" fill="#1d2328"/>
-<path d="M40,555 L40,365 L210,365" fill="none" stroke="#2f6f3e" stroke-width="10" stroke-linejoin="round"/>
-<circle cx="40" cy="560" r="10" fill="#9aa3a8" stroke="#555"/>
-<text x="58" y="580" font-size="13" fill="#33434c">garden tap</text>
-<path d="M450,375 L530,377 L530,310 L710,330" fill="none" stroke="#2f6f3e" stroke-width="10" stroke-linejoin="round"/>
-<path d="M710,322 l18,4 l0,10 l-18,4 z" fill="#5f6a72"/>
-<path d="M728,332 q60,-30 110,310" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
-<path d="M728,332 q70,-24 126,332" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
-<path d="M728,332 q80,-18 142,354" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
-<path d="M728,332 q90,-12 158,376" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
-<path d="M728,332 q100,-6 174,398" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
-<path d="M728,332 q110,0 190,420" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
-<path d="M728,332 q120,6 206,442" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
-<path d="M728,332 q130,12 222,464" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
-<path d="M728,332 q140,18 238,486" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
-<text x="750" y="300" font-size="14" fill="#16232b" font-weight="bold">outlet sprays in from 1 m up</text>
+<path d="M40,620 L480,620 L480,435 L398,435 L398,401" fill="none" stroke="#2f6f3e" stroke-width="10" stroke-linejoin="round"/>
+<circle cx="40" cy="625" r="10" fill="#9aa3a8" stroke="#555"/>
+<text x="30" y="655" font-size="13" fill="#33434c">garden tap</text>
+<path d="M450,290 L480,292 L480,180 L710,195" fill="none" stroke="#2f6f3e" stroke-width="10" stroke-linejoin="round"/>
+<text x="490" y="270" font-size="13" fill="#33434c">hose up beside the box,</text><text x="490" y="286" font-size="13" fill="#33434c">then 90° out from the wall</text>
+<path d="M710,187 l18,4 l0,10 l-18,4 z" fill="#5f6a72"/>
+<path d="M728,197 q60,-30 150,440" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,197 q70,-24 166,462" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,197 q80,-18 182,484" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,197 q90,-12 198,506" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,197 q100,-6 214,528" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,197 q110,0 230,550" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,197 q120,6 246,572" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,197 q130,12 262,594" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,197 q140,18 278,616" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<text x="750" y="165" font-size="14" fill="#16232b" font-weight="bold">outlet sprays in from 1 m up</text>
 <path d="M280,408 L280,435 C280,485 220,485 220,435 L220,255 L170,255" fill="none" stroke="#1d2328" stroke-width="4"/>
 <rect x="105" y="205" width="70" height="90" rx="6" fill="#f4f4f4" stroke="#999" stroke-width="2"/>
 <rect x="110" y="197" width="60" height="16" rx="3" fill="#ddd" stroke="#999"/>
