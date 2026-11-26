@@ -1,6 +1,8 @@
-# IoT pool water refill
+# IoT pool water refill: a Home Assistant pool top-up
 
-An automatic pool top-up controller. An 80 GHz radar measures the distance to the water. When the level drops, an ESP32 running ESPHome opens a 12V solenoid valve until the pool is back up. Everything is visible and adjustable in Home Assistant.
+An automatic pool top-up controller that **integrates with Home Assistant**. An 80 GHz radar measures the distance to the water. When the level drops, an ESP32 running **ESPHome** opens a 12V solenoid valve until the pool is back up.
+
+It is added to Home Assistant through the ESPHome integration, so the level, the valve and every setting appear as Home Assistant entities. You can watch the level on a dashboard, open or close the valve, change the fill levels, and get a notification if the safety cut-off fires. The top-up logic runs on the ESP32 itself, so it keeps working even if Home Assistant is down.
 
 ![The finished unit](images/finished-unit.png)
 
@@ -37,11 +39,24 @@ See [`wiring/one-board-layout.png`](wiring/one-board-layout.png) for the top vie
 | ESP32 GPIO17 (TX2) | radar RX |
 | ESP32 GPIO23 (D23) | MOSFET PWM |
 | MOSFET OUT+ / OUT− | valve terminals A / B |
-| 1N4001 | across the valve, stripe on A (OUT+ side) |
+| 1N4001 | across the valve coil tabs, stripe on A (OUT+ side) |
 
 12V only goes to the buck and the MOSFET, never to the ESP32. A diode fitted backwards shorts the 12V, so check the stripe before powering up.
 
-Power-up order: confirm the buck's 5V pad is bridged and measure 5V on its output, then plug in the ESP32 and the radar.
+Power-up order: power the board with only the buck plugged in and measure 5V on the 5V bus. Only then plug in the ESP32, the MOSFET and the radar.
+
+## Home Assistant
+
+| In Home Assistant | What it does |
+|---|---|
+| **Distance** sensor | radar to water, in cm (goes up as the pool drops) |
+| **Fill Valve** switch | open or close the valve by hand |
+| **Auto Top-Up** switch | turn automatic filling on or off |
+| **Start Fill Above** / **Stop Fill Below** | the fill levels, adjustable from the dashboard |
+| **Max Fill Time** | safety cut-off, in minutes |
+| **Fill Lockout** / **Reset Fill Lockout** | shows when the cut-off fired, and clears it |
+
+You need Home Assistant with the **ESPHome Device Builder** add-on (or ESPHome on a PC). Full setup steps are in [docs/ESPHOME.md](docs/ESPHOME.md).
 
 ## Firmware
 
@@ -54,8 +69,8 @@ ESPHome config: [`esphome/pool-level.yaml`](esphome/pool-level.yaml). For step-b
 ![Inside the main box](mounting/main-box-inside.png)
 
 - The main box goes on the wall with the board inside. The **valve body is clamped upright outside the box's right side**, and only its **coil comes into the box** through a sealed cut-out, so no water ever goes inside the box. The tap hose connects to the bottom of the valve. From the top, the hose runs **up beside the box** and turns **90° out from the wall**. Cables enter through PG7 glands in the bottom, and there's a 3 mm drain hole.
-- For power, cut the DC lead about 10 cm from the plug, feed it through the gland, and rejoin it stripe to stripe so the polarity stays the same. The plugpack itself must be plugged in under cover or into a weatherproof outlet.
-- The radar box sits on a 45° timber wedge (or a hinge and slotted strap) about 110 mm below the main box. Check the angle with a phone level app.
+- For power, cut the plugpack's DC lead about 10 cm from the small barrel plug, feed the long end in through the gland, and rejoin it to the barrel-plug piece stripe to stripe so the polarity stays the same. The barrel plug then goes into the barrel-to-screw adapter inside the box. The plugpack itself must be plugged in under cover or into a weatherproof outlet.
+- The radar box sits on a 45° timber wedge (or a hinge and slotted strap) about 20 mm below the main box. Check the angle with a phone level app.
 - Before sealing the radar box, bench-test that the reading through the lid matches a tape measure.
 
 Full step-by-step instructions, with a picture for each stage, a wire checklist and troubleshooting, are in [docs/BUILD.md](docs/BUILD.md).

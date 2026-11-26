@@ -89,7 +89,7 @@ The full board, both sides, is in [`wiring/one-board-layout.png`](../wiring/one-
 
 ## Step 5: first power-up (board only)
 
-1. Cut the plugpack's DC lead **about 10 cm from the plug**. Join the plug end to the barrel adapter for now (the long end goes through the box gland in step 7).
+1. Don't cut the plugpack lead yet. Plug its barrel plug into the barrel-to-screw adapter.
 2. With **nothing plugged into any socket**, connect the adapter to 12V IN, + to +.
 3. Switch on and measure **12V IN + to −: about 12V**. If it reads −12V, swap the wires.
 4. Switch off and plug in **only the buck**. Switch on and measure **5V bus to GND bus: 4.9–5.1V**. The buck's LED is on.
@@ -119,8 +119,8 @@ The **valve body stays outside** the box, clamped upright to the box's right sid
    - **Bottom face:** drill the 3 mm drain and two 12.5 mm holes for the PG7 glands (12V and radar).
    - **Right face:** drill the corners of the coil cut-out, cut between them and file it to a snug fit. Drill the two P-clip screw holes.
    - **Radar box:** drill one 12.5 mm hole for its PG7 gland.
-4. Fit the glands, and fit the 4 standoffs for the board.
-5. Push the coil through the cut-out and clamp the valve body to the outside with the two P-clips. Seal around the coil **inside and out** with neutral-cure silicone.
+4. Fit the glands. Sit the perfboard in the box clear of the coil, mark its 4 corner holes on the base, drill them 3 mm and fit the 4 standoffs.
+5. Pull the coil's retaining clip off if it has one, push the coil through the cut-out and clamp the valve body to the outside with the two P-clips. Seal around the coil **inside and out** with neutral-cure silicone.
 6. Fit the inlet fitting to the **bottom** of the valve and the hose tail to the **top**, with thread tape on both.
 
 ---
@@ -132,11 +132,11 @@ The **valve body stays outside** the box, clamped upright to the box's right sid
 1. Inside the box, solder the **1N4001 across the coil's two tabs**, with the **stripe on A**.
 2. MOSFET **OUT+** → tab **A**, MOSFET **OUT−** → tab **B**. Heatshrink both.
 3. Fit wire 2 (12V) to the MOSFET's **VIN+** screw and wire 14 (GND) to **VIN−**.
-4. **Radar:** in the radar box, connect the radar's 5V, GND, TX and RX to the 4-core cable. Feed the cable through both glands, then connect it to the board's radar terminal: **radar TX → TX, radar RX → RX**.
+4. **Radar:** in the radar box, connect the radar's 5V, GND, TX and RX to the 4-core cable and write down which colour is which. Feed the cable through both glands, then connect it to the board's radar terminal. The terminal is labelled with the **radar's** pin names, so match them name to name: radar TX → **TX**, radar RX → **RX**. (The board crosses them over to the ESP32 for you.)
 5. Mount the radar with its lens **flat against the inside of the lid**. There's no hole for the lens, because the radar reads through the plastic.
-6. **Power lead:** feed the long end of the plugpack lead in through the 12V gland. Rejoin it to the plug end **stripe to stripe**, solder, and heatshrink each wire. Tighten the gland.
+6. **Power lead:** unplug the plugpack. Cut its DC lead **about 10 cm from the small barrel plug**. Slide heatshrink on, feed the long end in through the 12V gland, and rejoin it to the barrel-plug piece **stripe to stripe** (the striped wire is +). Solder, shrink, plug the barrel into the adapter and tighten the gland.
 
-> **Check:** with the multimeter, confirm 12V IN still shows about **+12V** after rejoining. In Home Assistant, **Distance** shows a steady number when the radar box points at the floor.
+> **Check:** with the multimeter, confirm 12V IN still shows about **+12V** after rejoining. Measure the radar **TX** terminal to GND: it should be **3.3V or less**. If it reads about 5V, unplug and ask before going further, as the ESP32's pins are 3.3V only. In Home Assistant, **Distance** shows a steady number when the radar box points at the floor.
 
 ---
 

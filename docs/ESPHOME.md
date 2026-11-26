@@ -31,7 +31,7 @@
 
 The first install has to go over a USB cable. After that, updates go over WiFi.
 
-1. Plug the ESP32 into the computer you're using Home Assistant on, with a USB data cable rather than a charge-only one.
+1. Plug the ESP32 into the computer you're viewing Home Assistant on, with a USB data cable rather than a charge-only one.
 2. On the **pool-level** card, press **⋮ → Install → Plug into this computer**. This needs Chrome or Edge.
 3. Pick the ESP32's port and wait for it to compile and upload. The first compile takes a few minutes.
 
@@ -66,7 +66,7 @@ Because the radar looks at the water at 45°, the **Distance** changes by about 
 
 1. With the pool at the level you want, note **Distance**. Say it reads 60.0.
 2. Set **Stop Fill Below** to that number (60.0).
-3. Set **Start Fill Above** about 3 cm higher (63.0). That's roughly a 2 cm drop in the water.
+3. Set **Start Fill Above** about 3 cm higher (63.0). That's roughly a 2 cm drop in the water. **Start Fill Above must always be bigger than Stop Fill Below**, otherwise Auto Top-Up won't run.
 4. Set **Max Fill Time** to a bit longer than a normal top-up takes. 60 minutes is the default.
 5. Turn on **Auto Top-Up**.
 

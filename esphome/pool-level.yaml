@@ -1,3 +1,5 @@
+# Pool auto top-up: DFRobot SEN0676 radar (UART2) + 12V valve via HW-517 MOSFET on GPIO23.
+# Setup guide: docs/ESPHOME.md
 esphome:
   name: pool-level
   friendly_name: Pool Level
@@ -82,6 +84,7 @@ number:
   - platform: modbus_controller
     modbus_controller_id: radar
     name: "Installation Height"
+    entity_category: config       # radar setting; not used at 45 deg
     register_type: holding
     address: 0x0005
     value_type: U_WORD
@@ -197,6 +200,14 @@ interval:
             return;
           }
           if (!id(auto_fill).state || id(lockout)) { id(low_count) = 0; return; }
+
+          // Settings must make sense: start level has to be above stop level
+          if (id(start_fill_cm).state <= id(stop_fill_cm).state) {
+            if (open) id(fill_valve).turn_off();
+            ESP_LOGW("pool", "Start Fill Above must be bigger than Stop Fill Below");
+            id(low_count) = 0;
+            return;
+          }
 
           if (open) {
             if (d < id(stop_fill_cm).state) id(fill_valve).turn_off();
