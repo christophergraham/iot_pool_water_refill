@@ -1,0 +1,214 @@
+esphome:
+  name: pool-level
+  friendly_name: Pool Level
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+wifi:
+  ssid: !secret wifi_ssid          # put the real values in secrets.yaml
+  password: !secret wifi_password
+  on_connect:
+    - output.turn_on: blue_led
+    - delay: 3s
+    - output.turn_off: blue_led
+  on_disconnect:
+    - output.turn_off: blue_led
+
+output:
+  - platform: gpio
+    id: blue_led
+    pin: GPIO2
+
+logger:
+
+api:
+
+ota:
+  platform: esphome
+
+# ---------------- Radar: DFRobot SEN0676, Modbus-RTU 8N1 @ 115200 ----------------
+uart:
+  id: radar_uart
+  tx_pin: GPIO17        # TX2 -> radar RX
+  rx_pin: GPIO16        # RX2 <- radar TX
+  baud_rate: 115200
+  data_bits: 8
+  parity: NONE
+  stop_bits: 1
+
+modbus:
+  id: modbus_bus
+  uart_id: radar_uart
+
+modbus_controller:
+  - id: radar
+    address: 0x01
+    modbus_id: modbus_bus
+    update_interval: 10s
+
+sensor:
+  # Register 0x0001 = lens-to-water distance in mm. Pool drops -> number goes UP.
+  - platform: modbus_controller
+    modbus_controller_id: radar
+    id: distance
+    name: "Distance"
+    register_type: holding
+    address: 0x0001
+    value_type: U_WORD
+    unit_of_measurement: "cm"
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1             # mm -> cm
+      - median:                   # ignore single splashes
+          window_size: 5
+          send_every: 1
+      - timeout: 60s              # no reading for 60 s -> unknown, valve closes
+
+  # Register 0x0003 = water level in mm, worked out from Installation Height.
+  # Only meaningful if the radar points straight down; at 45 deg use Distance.
+  - platform: modbus_controller
+    modbus_controller_id: radar
+    name: "Water Level"
+    register_type: holding
+    address: 0x0003
+    force_new_range: true         # don't read register 0x0002 in between
+    value_type: U_WORD
+    unit_of_measurement: "mm"
+
+number:
+  - platform: modbus_controller
+    modbus_controller_id: radar
+    name: "Installation Height"
+    register_type: holding
+    address: 0x0005
+    value_type: U_WORD
+    unit_of_measurement: "cm"
+    min_value: 0
+    max_value: 4000
+    step: 1
+
+  # ---- Top-up settings, adjustable from Home Assistant ----
+  - platform: template
+    id: start_fill_cm
+    name: "Start Fill Above"
+    icon: mdi:arrow-collapse-down
+    unit_of_measurement: "cm"
+    optimistic: true
+    restore_value: true
+    initial_value: 45
+    min_value: 15
+    max_value: 400
+    step: 0.5
+  - platform: template
+    id: stop_fill_cm
+    name: "Stop Fill Below"
+    icon: mdi:arrow-collapse-up
+    unit_of_measurement: "cm"
+    optimistic: true
+    restore_value: true
+    initial_value: 42.5
+    min_value: 15
+    max_value: 400
+    step: 0.5
+  - platform: template
+    id: max_fill_min
+    name: "Max Fill Time"
+    icon: mdi:timer-alert
+    unit_of_measurement: "min"
+    optimistic: true
+    restore_value: true
+    initial_value: 60
+    min_value: 1
+    max_value: 240
+    step: 1
+
+globals:
+  - id: low_count
+    type: int
+    initial_value: '0'
+  - id: lockout
+    type: bool
+    restore_value: true
+    initial_value: 'false'
+  - id: last_fill_end
+    type: uint32_t
+    initial_value: '0'
+
+switch:
+  - platform: gpio
+    pin: GPIO23                   # D23 -> HW-517 PWM/TRIG
+    name: "Fill Valve"
+    id: fill_valve
+    restore_mode: ALWAYS_OFF
+    on_turn_on:
+      - script.execute: fill_timeout     # safety limit applies to manual opens too
+    on_turn_off:
+      - script.stop: fill_timeout
+      - lambda: 'id(last_fill_end) = millis();'
+
+  - platform: template
+    id: auto_fill
+    name: "Auto Top-Up"
+    icon: mdi:water-sync
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_OFF
+
+binary_sensor:
+  - platform: template
+    name: "Fill Lockout"
+    device_class: problem
+    lambda: 'return id(lockout);'
+
+button:
+  - platform: template
+    name: "Reset Fill Lockout"
+    on_press:
+      - lambda: 'id(lockout) = false;'
+
+script:
+  - id: fill_timeout
+    mode: restart
+    then:
+      - delay: !lambda 'return (uint32_t)(id(max_fill_min).state * 60000);'
+      - if:
+          condition:
+            switch.is_on: fill_valve
+          then:
+            - lambda: 'id(lockout) = true;'
+            - switch.turn_off: fill_valve
+            - logger.log:
+                level: WARN
+                format: "Max fill time reached - valve locked out"
+
+interval:
+  - interval: 10s
+    then:
+      - lambda: |-
+          const float d = id(distance).state;
+          const bool open = id(fill_valve).state;
+
+          // Never leave the valve open with no valid reading
+          if (isnan(d)) {
+            if (open && id(auto_fill).state) id(fill_valve).turn_off();
+            id(low_count) = 0;
+            return;
+          }
+          if (!id(auto_fill).state || id(lockout)) { id(low_count) = 0; return; }
+
+          if (open) {
+            if (d < id(stop_fill_cm).state) id(fill_valve).turn_off();
+            return;
+          }
+
+          // 30 min rest between fills
+          if (id(last_fill_end) != 0 && millis() - id(last_fill_end) < 30UL * 60UL * 1000UL) return;
+
+          // Level must read low for 2 minutes (12 x 10 s) before opening
+          if (d > id(start_fill_cm).state) {
+            if (++id(low_count) >= 12) { id(low_count) = 0; id(fill_valve).turn_on(); }
+          } else {
+            id(low_count) = 0;
+          }
