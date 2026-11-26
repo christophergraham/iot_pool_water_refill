@@ -111,14 +111,17 @@ Follow **[ESPHOME.md](ESPHOME.md)**, then come back here.
 
 ![Inside the main box](../mounting/main-box-inside.png)
 
+The **valve body stays outside** the box, clamped upright to the box's right side. Only the **coil** comes into the box, through a sealed cut-out. No water goes inside the box.
+
 1. Print **[drilling-template.pdf](../mounting/drilling-template.pdf)** at **100% / Actual size**, and measure the 50 mm bar to confirm the scale.
-2. Before you drill, hold your valve, its bottom fitting and its top elbow upright against the inside right wall. They must fit in **about 105 mm**. If they don't, clamp the valve to the **outside** of the box's right side instead, and only drill a small sealed hole for the coil wires.
-3. Tape the template on, centre-punch each cross, and drill:
-   - **Bottom face:** 3 mm drain, two 12.5 mm holes for PG7 glands (12V and radar), and the water inlet (size to suit your fitting).
-   - **Right face, near the top:** the outlet.
-   - **Radar box:** one 12.5 mm hole for its PG7 gland.
-4. Fit the glands. Fit the 4 standoffs for the board on the left side of the main box.
-5. Stand the valve upright on the right with **flow upward**, the coil facing left, and hold it with two P-clips. Fit the inlet through the bottom and the elbow and outlet through the side, using thread tape on every thread. Seal the outside of each hole with neutral-cure silicone.
+2. Hold the valve against the box's right side, upright with **flow going up** and the coil facing the box. Mark the coil's outline. The template's 30 × 30 mm square is only a guide, so **cut to suit your coil**.
+3. Tape the template on and centre-punch each cross, then:
+   - **Bottom face:** drill the 3 mm drain and two 12.5 mm holes for the PG7 glands (12V and radar).
+   - **Right face:** drill the corners of the coil cut-out, cut between them and file it to a snug fit. Drill the two P-clip screw holes.
+   - **Radar box:** drill one 12.5 mm hole for its PG7 gland.
+4. Fit the glands, and fit the 4 standoffs for the board.
+5. Push the coil through the cut-out and clamp the valve body to the outside with the two P-clips. Seal around the coil **inside and out** with neutral-cure silicone.
+6. Fit the inlet fitting to the **bottom** of the valve and the hose tail to the **top**, with thread tape on both.
 
 ---
 
@@ -126,7 +129,7 @@ Follow **[ESPHOME.md](ESPHOME.md)**, then come back here.
 
 ![Valve and diode](images/valve-diode.png)
 
-1. Solder the **1N4001 across the coil's two tabs**, with the **stripe on A**.
+1. Inside the box, solder the **1N4001 across the coil's two tabs**, with the **stripe on A**.
 2. MOSFET **OUT+** → tab **A**, MOSFET **OUT−** → tab **B**. Heatshrink both.
 3. Fit wire 2 (12V) to the MOSFET's **VIN+** screw and wire 14 (GND) to **VIN−**.
 4. **Radar:** in the radar box, connect the radar's 5V, GND, TX and RX to the 4-core cable. Feed the cable through both glands, then connect it to the board's radar terminal: **radar TX → TX, radar RX → RX**.
@@ -145,7 +148,7 @@ Follow **[ESPHOME.md](ESPHOME.md)**, then come back here.
 2. Cut a **45°** end on the timber offcut and screw it to the wall about **20 mm below** the main box.
 3. Fix the radar box's flange to the sloped face with the **lid facing the pool**. Lay your phone on the lid and use a level app to confirm **45°**.
 4. Give both cables a **drip loop**: they should dip below the glands before going up.
-5. Run the hose **up beside the box**, then turn it **90° out from the wall** at the top so it sprays into the pool from about **1 m up**. Fix it so it can never fall into the water. That air gap is your backflow protection.
+5. Connect the tap hose to the **bottom** of the valve. From the **top** of the valve, run the hose **up beside the box**, then turn it **90° out from the wall** with an elbow so it sprays into the pool from about **1 m up**. Fix it so it can never fall into the water. That air gap is your backflow protection.
 6. Plug the plugpack into a **covered or weatherproof** power point.
 7. Fit the lids. Snug the screws evenly so the seals compress.
 
@@ -171,4 +174,4 @@ Follow **[ESPHOME.md](ESPHOME.md)**, then come back here.
 | MOSFET LED on but no click | Valve wiring | Check OUT+ to A and OUT− to B, and look for 12V at the tabs when it's on |
 | 12V supply cuts out when the valve opens | Diode backwards (a short) | Unplug immediately and turn the diode around (stripe on A) |
 | **Fill Lockout** turned on | Fill took longer than **Max Fill Time** | Look for a leak or a low tap pressure, then press **Reset Fill Lockout** |
-| Water in the box | A leaking fitting or gland | Re-tape the threads, re-seal, and check the drain hole is clear |
+| Water in the box | Leak around the coil cut-out or a gland | Re-seal the coil cut-out inside and out, tighten the glands, and check the drain hole is clear |

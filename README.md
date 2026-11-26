@@ -53,7 +53,7 @@ ESPHome config: [`esphome/pool-level.yaml`](esphome/pool-level.yaml). For step-b
 
 ![Inside the main box](mounting/main-box-inside.png)
 
-- Main box on the wall: board on the left, valve **upright on the right** with flow going up. Water comes in through the bottom, and the outlet leaves the right side near the top. The hose then runs **up beside the box** and turns **90° out from the wall** at the top. Cables enter through PG7 glands in the bottom, and there's a 3 mm drain hole. Nothing goes through the top.
+- The main box goes on the wall with the board inside. The **valve body is clamped upright outside the box's right side**, and only its **coil comes into the box** through a sealed cut-out, so no water ever goes inside the box. The tap hose connects to the bottom of the valve. From the top, the hose runs **up beside the box** and turns **90° out from the wall**. Cables enter through PG7 glands in the bottom, and there's a 3 mm drain hole.
 - For power, cut the DC lead about 10 cm from the plug, feed it through the gland, and rejoin it stripe to stripe so the polarity stays the same. The plugpack itself must be plugged in under cover or into a weatherproof outlet.
 - The radar box sits on a 45° timber wedge (or a hinge and slotted strap) about 110 mm below the main box. Check the angle with a phone level app.
 - Before sealing the radar box, bench-test that the reading through the lid matches a tape measure.

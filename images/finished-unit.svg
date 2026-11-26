@@ -29,11 +29,12 @@
 <text x="310.0" y="330.5" font-size="14" fill="#d8dde0" text-anchor="middle" font-weight="bold">POOL TOP-UP</text>
 <rect x="273" y="396" width="14" height="12" fill="#1d2328"/>
 <rect x="333" y="396" width="14" height="12" fill="#1d2328"/>
-<path d="M40,620 L480,620 L480,435 L398,435 L398,401" fill="none" stroke="#2f6f3e" stroke-width="10" stroke-linejoin="round"/>
+<rect x="454" y="280" width="26" height="125" rx="10" fill="#b9c2c8" stroke="#5f6a72" stroke-width="2"/>
+<path d="M40,620 L467,620 L467,405" fill="none" stroke="#2f6f3e" stroke-width="10" stroke-linejoin="round"/>
 <circle cx="40" cy="625" r="10" fill="#9aa3a8" stroke="#555"/>
 <text x="30" y="655" font-size="13" fill="#33434c">garden tap</text>
-<path d="M450,290 L480,292 L480,180 L710,195" fill="none" stroke="#2f6f3e" stroke-width="10" stroke-linejoin="round"/>
-<text x="490" y="270" font-size="13" fill="#33434c">hose up beside the box,</text><text x="490" y="286" font-size="13" fill="#33434c">then 90° out from the wall</text>
+<path d="M467,280 L467,180 L710,195" fill="none" stroke="#2f6f3e" stroke-width="10" stroke-linejoin="round"/>
+<text x="490" y="270" font-size="13" fill="#33434c">valve outside, coil inside;</text><text x="490" y="286" font-size="13" fill="#33434c">hose up, then 90° out</text>
 <path d="M710,187 l18,4 l0,10 l-18,4 z" fill="#5f6a72"/>
 <path d="M728,197 q60,-30 150,440" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
 <path d="M728,197 q70,-24 166,462" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
@@ -57,7 +58,7 @@
 <line x1="360" y1="535" x2="780.6888370749728" y2="840.6483311920861" stroke="#13979a" stroke-width="1.2" stroke-dasharray="8 6" opacity="0.8"/>
 <text x="610" y="615" font-size="14" fill="#0c6a6c" font-weight="bold">radar at 45° reads the water level</text>
 <line x1="310.0" y1="260" x2="490" y2="210" stroke="#33434c" stroke-width="1.2"/>
-<text x="496" y="214" font-size="14" fill="#16232b" text-anchor="start">Main box: ESP32 board + valve (Jaycar HB6128)</text>
+<text x="496" y="214" font-size="14" fill="#16232b" text-anchor="start">Main box: ESP32 board + valve coil (Jaycar HB6128)</text>
 <line x1="380" y1="495" x2="540" y2="465" stroke="#33434c" stroke-width="1.2"/>
 <text x="546" y="469" font-size="14" fill="#16232b" text-anchor="start">Radar box on a 45° wedge (Jaycar HB6127)</text>
 <text x="40" y="40" font-size="26" font-weight="bold" fill="#16232b">The finished unit</text>

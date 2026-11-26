@@ -14,17 +14,20 @@
 <circle cx="72" cy="59.5" r="6.25" fill="none" stroke="#000" stroke-width="0.35"/>
 <line x1="63.75" y1="59.5" x2="80.25" y2="59.5" stroke="#000" stroke-width="0.2"/><line x1="72" y1="51.25" x2="72" y2="67.75" stroke="#000" stroke-width="0.2"/>
 <text x="72" y="70.75" font-size="3" text-anchor="middle" fill="#111">radar PG7 12.5 mm</text>
-<circle cx="161" cy="59.5" r="13.5" fill="none" stroke="#000" stroke-width="0.35"/>
-<line x1="145.5" y1="59.5" x2="176.5" y2="59.5" stroke="#000" stroke-width="0.2"/><line x1="161" y1="44.0" x2="161" y2="75.0" stroke="#000" stroke-width="0.2"/>
-<text x="161" y="78.0" font-size="3" text-anchor="middle" fill="#111">water in Ø27 (check your fitting)</text>
-<text x="14" y="94" font-size="2.8" text-anchor="start" fill="#111">← left end (board side)</text>
+<text x="14" y="94" font-size="2.8" text-anchor="start" fill="#111">← left end</text>
 <text x="185" y="94" font-size="2.8" text-anchor="end" fill="#111">right end (valve side) →</text>
 <text x="14" y="109" font-size="3.8" text-anchor="start" font-weight="bold" fill="#111">Main box — RIGHT side</text>
 <rect x="14" y="112" width="55" height="121" fill="none" stroke="#000" stroke-width="0.5"/>
 <text x="16" y="116" font-size="2.6" text-anchor="start" fill="#111">wall side ↓ left edge</text>
-<circle cx="41.5" cy="130" r="13.5" fill="none" stroke="#000" stroke-width="0.35"/>
-<line x1="26.0" y1="130" x2="57.0" y2="130" stroke="#000" stroke-width="0.2"/><line x1="41.5" y1="114.5" x2="41.5" y2="145.5" stroke="#000" stroke-width="0.2"/>
-<text x="41.5" y="148.5" font-size="3" text-anchor="middle" fill="#111">outlet Ø27</text>
+<rect x="26.5" y="157.5" width="30" height="30" fill="none" stroke="#000" stroke-width="0.35" stroke-dasharray="1.5 1"/>
+<text x="41.5" y="192.5" font-size="3" text-anchor="middle" fill="#111">coil cut-out 30 × 30</text>
+<text x="41.5" y="197.0" font-size="2.6" text-anchor="middle" fill="#111">CUT TO SUIT YOUR COIL</text>
+<circle cx="41.5" cy="126" r="2.0" fill="none" stroke="#000" stroke-width="0.35"/>
+<line x1="37.5" y1="126" x2="45.5" y2="126" stroke="#000" stroke-width="0.2"/><line x1="41.5" y1="122.0" x2="41.5" y2="130.0" stroke="#000" stroke-width="0.2"/>
+<text x="41.5" y="133.0" font-size="3" text-anchor="middle" fill="#111">P-clip screw</text>
+<circle cx="41.5" cy="219" r="2.0" fill="none" stroke="#000" stroke-width="0.35"/>
+<line x1="37.5" y1="219" x2="45.5" y2="219" stroke="#000" stroke-width="0.2"/><line x1="41.5" y1="215.0" x2="41.5" y2="223.0" stroke="#000" stroke-width="0.2"/>
+<text x="41.5" y="226.0" font-size="3" text-anchor="middle" fill="#111">P-clip screw</text>
 <text x="41.5" y="237" font-size="3" text-anchor="middle" fill="#111">bottom</text>
 <text x="84" y="109" font-size="3.8" text-anchor="start" font-weight="bold" fill="#111">Radar box HB6127 — end face</text>
 <rect x="84" y="112" width="90" height="55" fill="none" stroke="#000" stroke-width="0.5"/>
@@ -33,7 +36,7 @@
 <text x="129" y="150.75" font-size="3" text-anchor="middle" fill="#111">radar cable PG7 12.5 mm</text>
 <text x="84" y="182" font-size="3.6" text-anchor="start" font-weight="bold" fill="#111">Tips:</text>
 <text x="84" y="188" font-size="3.2" text-anchor="start" fill="#111">Tape the template on, centre-punch each cross, then drill.</text>
-<text x="84" y="194" font-size="3.2" text-anchor="start" fill="#111">Use a step drill for the 12.5 mm and 27 mm holes.</text>
+<text x="84" y="194" font-size="3.2" text-anchor="start" fill="#111">Step drill for the 12.5 mm holes; drill corners + file for the cut-out.</text>
 <text x="84" y="200" font-size="3.2" text-anchor="start" fill="#111">Box walls have ribs/screw posts: check inside first.</text>
 <text x="84" y="206" font-size="3.2" text-anchor="start" fill="#111">Measure your actual fittings: hole = thread size + 0.5 mm.</text>
 </svg>
