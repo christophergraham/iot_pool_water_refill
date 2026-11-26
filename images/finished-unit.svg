@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe7f7"/><stop offset="1" stop-color="#eef6fb"/></linearGradient>
+<linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4fb3e0"/><stop offset="1" stop-color="#1f78b4"/></linearGradient>
+<linearGradient id="boxg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6b757d"/><stop offset="1" stop-color="#454d53"/></linearGradient>
+<linearGradient id="boxs" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b4247"/><stop offset="1" stop-color="#2e3438"/></linearGradient>
+<pattern id="brick" width="60" height="30" patternUnits="userSpaceOnUse"><rect width="60" height="30" fill="#e8dccb"/><path d="M0,0 H60 M0,15 H60 M30,0 V15 M0,15 V30 M60,15 V30" stroke="#d3c4ae" stroke-width="2"/></pattern>
+</defs>
+<rect width="1400" height="900" fill="url(#sky)"/>
+<polygon points="0,60 560,140 560,640 0,700" fill="url(#brick)"/>
+<polygon points="0,60 560,140 560,150 0,72" fill="#cbbba3"/>
+<polygon points="0,700 560,640 1400,640 1400,900 0,900" fill="#d9d3c7"/>
+<polygon points="400,662 1400,655 1400,900 270,900" fill="#f2efe8"/>
+<polygon points="450,680 1400,674 1400,900 330,900" fill="url(#water)"/>
+<path d="M420,720 q40,-6 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+<path d="M410,744 q40,-6 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+<path d="M400,768 q40,-6 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+<path d="M390,792 q40,-6 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+<path d="M380,816 q40,-6 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+<path d="M370,840 q40,-6 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+<path d="M360,864 q40,-6 80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0 t80,0" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+<polygon points="410,258 450,270 450,417 410,401" fill="url(#boxs)"/>
+<polygon points="210,250 250,262 450,270 410,258" fill="#7d878e"/>
+<polygon points="210,250 410,258 410,401 210,395" fill="url(#boxg)" stroke="#2b3238" stroke-width="2"/>
+<circle cx="222" cy="264" r="4.5" fill="#2b3238"/>
+<circle cx="398" cy="270" r="4.5" fill="#2b3238"/>
+<circle cx="222" cy="383" r="4.5" fill="#2b3238"/>
+<circle cx="398" cy="389" r="4.5" fill="#2b3238"/>
+<text x="310.0" y="330.5" font-size="14" fill="#d8dde0" text-anchor="middle" font-weight="bold">POOL TOP-UP</text>
+<rect x="273" y="396" width="14" height="12" fill="#1d2328"/>
+<rect x="333" y="396" width="14" height="12" fill="#1d2328"/>
+<path d="M40,555 L40,365 L210,365" fill="none" stroke="#2f6f3e" stroke-width="10" stroke-linejoin="round"/>
+<circle cx="40" cy="560" r="10" fill="#9aa3a8" stroke="#555"/>
+<text x="58" y="580" font-size="13" fill="#33434c">garden tap</text>
+<path d="M450,375 L530,377 L530,310 L710,330" fill="none" stroke="#2f6f3e" stroke-width="10" stroke-linejoin="round"/>
+<path d="M710,322 l18,4 l0,10 l-18,4 z" fill="#5f6a72"/>
+<path d="M728,332 q60,-30 110,310" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,332 q70,-24 126,332" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,332 q80,-18 142,354" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,332 q90,-12 158,376" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,332 q100,-6 174,398" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,332 q110,0 190,420" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,332 q120,6 206,442" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,332 q130,12 222,464" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<path d="M728,332 q140,18 238,486" fill="none" stroke="#e8f6ff" stroke-width="2.2" stroke-dasharray="3 6"/>
+<text x="750" y="300" font-size="14" fill="#16232b" font-weight="bold">outlet sprays in from 1 m up</text>
+<path d="M280,408 L280,435 C280,485 220,485 220,435 L220,255 L170,255" fill="none" stroke="#1d2328" stroke-width="4"/>
+<rect x="105" y="205" width="70" height="90" rx="6" fill="#f4f4f4" stroke="#999" stroke-width="2"/>
+<rect x="110" y="197" width="60" height="16" rx="3" fill="#ddd" stroke="#999"/>
+<text x="140" y="255" font-size="11" text-anchor="middle" fill="#555">weather-</text><text x="140" y="268" font-size="11" text-anchor="middle" fill="#555">proof GPO</text>
+<polygon points="270,425 360,431 270,515" fill="#c9a36b" stroke="#8a6a3c" stroke-width="2"/>
+<g transform="translate(330,495) rotate(-45)"><rect x="-62" y="-10" width="124" height="62" rx="6" fill="url(#boxg)" stroke="#2b3238" stroke-width="2"/><rect x="-62" y="44" width="124" height="8" fill="#7fd0d2"/></g>
+<path d="M380,465 C410,485 400,525 375,505 C350,485 350,415 340,408" fill="none" stroke="#2563c9" stroke-width="3.5"/>
+<line x1="360" y1="535" x2="758.3431104218686" y2="869.2495570370004" stroke="#13979a" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.8"/>
+<line x1="360" y1="535" x2="734.0566961760986" y2="896.2223526386786" stroke="#13979a" stroke-width="1.2" stroke-dasharray="8 6" opacity="0.8"/>
+<line x1="360" y1="535" x2="780.6888370749728" y2="840.6483311920861" stroke="#13979a" stroke-width="1.2" stroke-dasharray="8 6" opacity="0.8"/>
+<text x="610" y="615" font-size="14" fill="#0c6a6c" font-weight="bold">radar at 45° reads the water level</text>
+<line x1="310.0" y1="260" x2="490" y2="210" stroke="#33434c" stroke-width="1.2"/>
+<text x="496" y="214" font-size="14" fill="#16232b" text-anchor="start">Main box: ESP32 board + valve (Jaycar HB6128)</text>
+<line x1="380" y1="495" x2="540" y2="465" stroke="#33434c" stroke-width="1.2"/>
+<text x="546" y="469" font-size="14" fill="#16232b" text-anchor="start">Radar box on a 45° wedge (Jaycar HB6127)</text>
+<text x="40" y="40" font-size="26" font-weight="bold" fill="#16232b">The finished unit</text>
+<text x="40" y="66" font-size="14" fill="#33434c">Illustration, not to scale. Home Assistant shows the level, valve state and lockout, and you can adjust the fill levels.</text>
+</svg>

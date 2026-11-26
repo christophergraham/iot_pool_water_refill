@@ -2,7 +2,9 @@
 
 An automatic pool top-up controller. An 80 GHz radar measures the distance to the water. When the level drops, an ESP32 running ESPHome opens a 12V solenoid valve until the pool is back up. Everything is visible and adjustable in Home Assistant.
 
-![Board layout](wiring/one-board-layout.png)
+![The finished unit](images/finished-unit.png)
+
+**Guides:** [Build instructions](docs/BUILD.md) · [Adding it to Home Assistant with ESPHome](docs/ESPHOME.md)
 
 ## How it works
 
@@ -57,18 +59,17 @@ Power-up order: confirm the buck's 5V pad is bridged and measure 5V on its outpu
 
 ## Firmware
 
-1. Copy [`esphome/pool-level.yaml`](esphome/pool-level.yaml) into your ESPHome folder.
-2. Copy `esphome/secrets.yaml.example` to `secrets.yaml` and fill in your WiFi details.
-3. Flash it, then adopt the device in Home Assistant.
-4. Set **Start Fill Above** and **Stop Fill Below** from the **Distance** reading, then turn on **Auto Top-Up**.
+ESPHome config: [`esphome/pool-level.yaml`](esphome/pool-level.yaml). For step-by-step setup in Home Assistant, including how to set the fill levels, see [docs/ESPHOME.md](docs/ESPHOME.md).
 
 ## Enclosure and mounting
 
-- The main box goes on a wall, with the valve at the bottom and the board above it. The pipes and cables come in through the bottom wall, and there is a small drain hole at the lowest corner.
-- Power comes in through a PG7 gland. Cut the DC lead about 10 cm from the plug, feed it through the gland, and rejoin it stripe to stripe so the polarity stays the same. The plugpack itself must be plugged in under cover or into a weatherproof outlet.
-- The radar box hangs about 110 mm below the main box on a tilt bracket set to 45°. Check the angle with a phone level app. A 45° timber wedge is enough for testing.
+![Mounting](mounting/mounting.png)
+
+![Inside the main box](mounting/main-box-inside.png)
+
+- The main box goes on a wall, with the valve at the bottom and the board above it. The pipes go out through the side walls, the cables come in through PG7 glands in the bottom wall, and there is a 3 mm drain hole at the lowest corner.
+- For power, cut the DC lead about 10 cm from the plug, feed it through the gland, and rejoin it stripe to stripe so the polarity stays the same. The plugpack itself must be plugged in under cover or into a weatherproof outlet.
+- The radar box sits on a 45° timber wedge (or a hinge and slotted strap) about 110 mm below the main box. Check the angle with a phone level app.
 - Before sealing the radar box, bench-test that the reading through the lid matches a tape measure.
 
-## Legacy
-
-`legacy/` holds earlier versions: a 3D-printable enclosure (manifold3d model and STLs), the first Arduino sketch, and the earlier wiring drawings. They're kept for reference only. The current build uses the Jaycar boxes and ESPHome.
+Full step-by-step instructions are in [docs/BUILD.md](docs/BUILD.md).

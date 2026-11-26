@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1020" width="1400" height="1020" font-family="Arial, Helvetica, sans-serif"><rect width="1400" height="1020" fill="#fff"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#566a75"/></marker></defs>
+<text x="40.0" y="44.0" font-size="26" text-anchor="start" fill="#16232b" font-weight="bold">Mounting the two boxes</text>
+<text x="40.0" y="70.0" font-size="15" text-anchor="start" fill="#566a75">Jaycar HB6128 (171 × 121 × 55) for the board and valve, HB6127 (115 × 90 × 55, flanged) for the radar. Sizes in mm.</text>
+<text x="60.0" y="120.0" font-size="18" text-anchor="start" fill="#16232b" font-weight="bold">Front view (looking at the wall)</text>
+<rect x="60" y="140" width="560" height="760" fill="#f3efe8" stroke="#d9d1c4"/>
+<text x="72.0" y="160.0" font-size="12" text-anchor="start" fill="#9b8f7c">wall</text>
+<rect x="190" y="170" width="342.0" height="242.0" rx="8" fill="#5b656d" stroke="#3a4248" stroke-width="2.5"/>
+<text x="361.0" y="285.0" font-size="17" text-anchor="middle" fill="#fff" font-weight="bold">Main box</text>
+<text x="361.0" y="307.0" font-size="13" text-anchor="middle" fill="#e3e7ea">board + valve</text>
+<circle cx="202" cy="182" r="5" fill="#2b3238"/>
+<circle cx="520.0" cy="182" r="5" fill="#2b3238"/>
+<circle cx="202" cy="400.0" r="5" fill="#2b3238"/>
+<circle cx="520.0" cy="400.0" r="5" fill="#2b3238"/>
+<text x="544.0" y="188.0" font-size="12" text-anchor="start" fill="#33434c">4 screws to the wall through the</text>
+<text x="544.0" y="204.0" font-size="12" text-anchor="start" fill="#33434c">base holes under the lid screws</text>
+<line x1="190" y1="158" x2="532.0" y2="158" stroke="#566a75" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="361.0" y="152.0" font-size="12" text-anchor="middle" fill="#566a75">171</text>
+<line x1="176" y1="170" x2="176" y2="412.0" stroke="#566a75" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="168.0" y="295.0" font-size="12" text-anchor="end" fill="#566a75">121</text>
+<rect x="130" y="363.0" width="60" height="18" fill="#9fb3c8" stroke="#5f7489"/>
+<text x="126.0" y="402.0" font-size="12" text-anchor="end" fill="#16232b">water in</text>
+<rect x="532.0" y="363.0" width="60" height="18" fill="#9fb3c8" stroke="#5f7489"/>
+<text x="596.0" y="402.0" font-size="12" text-anchor="start" fill="#16232b">to the outlet</text>
+<rect x="271" y="412.0" width="18" height="12" fill="#1d2328"/>
+<rect x="456" y="412.0" width="18" height="12" fill="#1d2328"/>
+<circle cx="208" cy="409.0" r="3" fill="#fff" stroke="#1d2328"/>
+<text x="220.0" y="434.0" font-size="11" text-anchor="start" fill="#33434c">drain hole</text>
+<path d="M280,424.0 L280,432.0 C280,452.0 240,452.0 220,452.0 L150,452.0 C120,452.0 120,542.0 100,542.0 C80,542.0 80,472.0 80,452.0" fill="none" stroke="#2b3238" stroke-width="4"/>
+<text x="72.0" y="572.0" font-size="11" text-anchor="start" fill="#16232b" font-weight="bold">12V lead: drip loop,</text>
+<text x="72.0" y="587.0" font-size="11" text-anchor="start" fill="#16232b">then up to a covered</text>
+<text x="72.0" y="602.0" font-size="11" text-anchor="start" fill="#16232b">power point</text>
+<rect x="266.0" y="442.0" width="190.0" height="50.0" fill="#c9a36b" stroke="#8a6a3c" stroke-width="2"/>
+<text x="361.0" y="472.0" font-size="12" text-anchor="middle" fill="#4a3820" font-weight="bold">45° wedge / bracket</text>
+<rect x="246.0" y="492.0" width="230.0" height="180.0" rx="8" fill="#5b656d" stroke="#3a4248" stroke-width="2.5"/>
+<rect x="230.0" y="512.0" width="16" height="140.0" fill="#5b656d" stroke="#3a4248"/>
+<rect x="476.0" y="512.0" width="16" height="140.0" fill="#5b656d" stroke="#3a4248"/>
+<text x="361.0" y="576.0" font-size="16" text-anchor="middle" fill="#fff" font-weight="bold">Radar box</text>
+<text x="361.0" y="596.0" font-size="12" text-anchor="middle" fill="#e3e7ea">tilted 45° toward the pool</text>
+<text x="361.0" y="612.0" font-size="11" text-anchor="middle" fill="#c9d1d6">(see side view)</text>
+<line x1="246.0" y1="692.0" x2="476.0" y2="692.0" stroke="#566a75" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="361.0" y="686.0" font-size="12" text-anchor="middle" fill="#566a75">115</text>
+<path d="M492.0,542.0 C531.0,542.0 531.0,642.0 516.0,642.0 C501.0,642.0 536.0,552.0 536.0,512.0 L536.0,452.0 C536.0,442.0 465,452.0 465,424.0" fill="none" stroke="#2563c9" stroke-width="4"/>
+<text x="545.0" y="612.0" font-size="11" text-anchor="start" fill="#2563c9">4-core radar cable,</text>
+<text x="545.0" y="627.0" font-size="11" text-anchor="start" fill="#2563c9">drip loop</text>
+<line x1="610" y1="170" x2="610" y2="672.0" stroke="#566a75" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="602.0" y="425.0" font-size="12" text-anchor="end" fill="#566a75">≈ 250</text>
+<text x="780.0" y="120.0" font-size="18" text-anchor="start" fill="#16232b" font-weight="bold">Side view (cut through the middle)</text>
+<rect x="780" y="140" width="40" height="760" fill="#e4ddd2" stroke="#c9bfb0"/>
+<text x="800.0" y="890.0" font-size="12" text-anchor="middle" fill="#9b8f7c">wall</text>
+<rect x="820" y="170" width="110.0" height="242.0" rx="6" fill="#5b656d" stroke="#3a4248" stroke-width="2.5"/>
+<text x="875.0" y="291.0" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">main</text>
+<text x="875.0" y="307.0" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">box</text>
+<line x1="820" y1="158" x2="930.0" y2="158" stroke="#566a75" stroke-width="1.3" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="875.0" y="152.0" font-size="12" text-anchor="middle" fill="#566a75">55</text>
+<path d="M930.0,372.0 L1050.0,372.0 L1050.0,312.0 L1260.0,312.0" fill="none" stroke="#5f7489" stroke-width="7" stroke-linejoin="round"/>
+<path d="M1260.0,312.0 l12,-8 l0,16 z" fill="#5f7489"/>
+<path d="M1275.0,312.0 q40,-10 70,40" fill="none" stroke="#7fb2e5" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M1275.0,312.0 q48,-2 80,62" fill="none" stroke="#7fb2e5" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M1275.0,312.0 q56,6 90,84" fill="none" stroke="#7fb2e5" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M1275.0,312.0 q64,14 100,106" fill="none" stroke="#7fb2e5" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M1275.0,312.0 q72,22 110,128" fill="none" stroke="#7fb2e5" stroke-width="2" stroke-dasharray="4 4"/>
+<text x="1130.0" y="300.0" font-size="12" text-anchor="middle" fill="#16232b" font-weight="bold">outlet, fixed in place</text>
+<polygon points="820.0,452.0 960.0,452.0 820.0,592.0" fill="#c9a36b" stroke="#8a6a3c" stroke-width="2" />
+<polygon points="953.6,458.4 826.4,585.6 904.1,663.4 1031.4,536.1" fill="#5b656d" stroke="#3a4248" stroke-width="2.5" />
+<text x="928.9" y="564.9" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">radar</text>
+<line x1="1031.4" y1="536.1" x2="904.1" y2="663.4" stroke="#7fd0d2" stroke-width="5"/>
+<line x1="967.8" y1="599.8" x2="1271.8" y2="903.8" stroke="#13979a" stroke-width="2.5" stroke-dasharray="8 6"/>
+<line x1="967.8" y1="599.8" x2="1255.5" y2="919.3" stroke="#13979a" stroke-width="1.5" stroke-dasharray="3 5"/>
+<line x1="967.8" y1="599.8" x2="1287.3" y2="887.5" stroke="#13979a" stroke-width="1.5" stroke-dasharray="3 5"/>
+<rect x="820" y="903.8376618407356" width="560" height="96.16233815926444" fill="#cfe6f7"/>
+<line x1="820" y1="903.8376618407356" x2="1380" y2="903.8376618407356" stroke="#2563c9" stroke-width="3"/>
+<text x="1370.0" y="927.8" font-size="14" text-anchor="end" fill="#1b4a91" font-weight="bold">pool water</text>
+<text x="1087.8" y="689.8" font-size="13" text-anchor="start" fill="#0c6a6c" font-weight="bold">radar beam at 45°</text>
+<text x="1087.8" y="707.8" font-size="12" text-anchor="start" fill="#0c6a6c">reads through the lid</text>
+<path d="M1037.7817459305202,599.7817459305202 A70,70 0 0,1 1017.3,649.3" fill="none" stroke="#566a75" stroke-width="1.5"/>
+<line x1="967.7817459305202" y1="599.7817459305202" x2="1057.7817459305202" y2="599.7817459305202" stroke="#566a75" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="1045.8" y="629.8" font-size="13" text-anchor="start" fill="#566a75" font-weight="bold">45°</text>
+<text x="828.0" y="492.0" font-size="12" text-anchor="start" fill="#16232b"></text>
+<text x="972.0" y="466.0" font-size="12" text-anchor="start" fill="#16232b" font-weight="bold">timber wedge cut at 45°</text>
+<text x="972.0" y="482.0" font-size="12" text-anchor="start" fill="#566a75">(or hinge + slotted strap)</text>
+<text x="940.0" y="444.0" font-size="12" text-anchor="start" fill="#566a75">set 45° with a phone level app on the lid</text>
+<text x="1270.0" y="352.0" font-size="12" text-anchor="middle" fill="#16232b">≥ 1 m above the water,</text>
+<text x="1270.0" y="368.0" font-size="12" text-anchor="middle" fill="#16232b">never able to drop in (air gap)</text>
+<text x="1370.0" y="990.0" font-size="11" text-anchor="end" fill="#566a75">Not to scale below the boxes</text>
+</svg>
