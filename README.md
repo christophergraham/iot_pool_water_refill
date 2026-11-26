@@ -19,7 +19,7 @@ An automatic pool top-up controller. An 80 GHz radar measures the distance to th
   - The valve always starts closed after a power cut.
 - The outlet sprays from about 1 m above the pool. That air gap is the backflow protection, so the outlet must never be able to end up in the water.
 
-## Parts
+## Parts (about $410 AUD)
 
 The full parts and tools list, with shop codes, is in **[docs/PARTS.md](docs/PARTS.md)**. The main items are an ESP32, a DFRobot SEN0676 radar, a 12V 3/4" solenoid valve, an HW-517 MOSFET module, a DFR1015 buck converter, a 12V 2A plugpack, and two Jaycar boxes (HB6128 and HB6127).
 
