@@ -846,7 +846,7 @@
 <text x="974.7" y="354.0" font-size="15" text-anchor="middle" fill="#fff" font-weight="bold">MOSFET</text>
 <text x="974.7" y="382.0" font-size="12" text-anchor="middle" fill="#d6e3f7">HW-517</text>
 <text x="974.7" y="430.0" font-size="11" text-anchor="middle" fill="#d6e3f7">plugs into a 2-pin socket,</text>
-<text x="974.7" y="445.0" font-size="11" text-anchor="middle" fill="#d6e3f7">velcro pad under the top end</text>
+<text x="974.7" y="445.0" font-size="11" text-anchor="middle" fill="#d6e3f7">mounting tape under it holds it flat</text>
 <rect x="1072.4" y="222.0" width="36.4" height="260.0" rx="3" fill="#2f6fd0" stroke="#1b4a91" stroke-width="2" opacity="1"/>
 <circle cx="1090.6" cy="248" r="9" fill="#cfd6dc" stroke="#55606a" stroke-width="2"/><line x1="1084.6" y1="248" x2="1096.6" y2="248" stroke="#55606a" stroke-width="2.5"/>
 <text x="1064.6" y="252.0" font-size="11" text-anchor="end" fill="#fff" font-weight="bold">VIN+</text>
@@ -1797,32 +1797,32 @@
 <circle cx="672" cy="1722" r="6.5" fill="#7fb2e5" stroke="#5f686d" stroke-width="1.5"/>
 <circle cx="516" cy="1488" r="6.5" fill="#7fb2e5" stroke="#5f686d" stroke-width="1.5"/>
 <circle cx="490" cy="1488" r="6.5" fill="#7fb2e5" stroke="#5f686d" stroke-width="1.5"/>
-<circle cx="1036" cy="1176" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
-<circle cx="1114" cy="1332" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
-<circle cx="1036" cy="1618" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
-<circle cx="1036" cy="1332" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
-<circle cx="1062" cy="1540" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
-<circle cx="880" cy="1228" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
-<circle cx="490" cy="1488" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
-<circle cx="776" cy="1722" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
 <circle cx="516" cy="1488" r="9.5" fill="none" stroke="#8a3fd1" stroke-width="3"/>
-<circle cx="490" cy="1670" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
+<circle cx="672" cy="1722" r="9.5" fill="none" stroke="#1f9d55" stroke-width="3"/>
+<circle cx="776" cy="1722" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
+<circle cx="490" cy="1488" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
+<circle cx="1036" cy="1618" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
 <circle cx="360" cy="1670" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
 <circle cx="776" cy="1670" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
-<circle cx="828" cy="1618" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
-<circle cx="1088" cy="1176" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
-<circle cx="906" cy="1670" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
-<circle cx="724" cy="1722" r="9.5" fill="none" stroke="#2563c9" stroke-width="3"/>
-<circle cx="1114" cy="1540" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
-<circle cx="828" cy="1722" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
-<circle cx="1036" cy="1540" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
-<circle cx="672" cy="1722" r="9.5" fill="none" stroke="#1f9d55" stroke-width="3"/>
-<circle cx="594" cy="1618" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
+<circle cx="1114" cy="1332" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
 <circle cx="620" cy="1202" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
-<circle cx="1062" cy="1332" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
+<circle cx="490" cy="1670" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
+<circle cx="906" cy="1670" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
+<circle cx="1036" cy="1176" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
+<circle cx="880" cy="1332" r="9.5" fill="none" stroke="#1f9d55" stroke-width="3"/>
+<circle cx="828" cy="1618" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
 <circle cx="880" cy="1358" r="9.5" fill="none" stroke="#2563c9" stroke-width="3"/>
 <circle cx="880" cy="1566" r="9.5" fill="none" stroke="#8a3fd1" stroke-width="3"/>
-<circle cx="880" cy="1332" r="9.5" fill="none" stroke="#1f9d55" stroke-width="3"/>
+<circle cx="724" cy="1722" r="9.5" fill="none" stroke="#2563c9" stroke-width="3"/>
+<circle cx="1036" cy="1540" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
+<circle cx="1062" cy="1540" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
+<circle cx="880" cy="1228" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
+<circle cx="1062" cy="1332" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
+<circle cx="594" cy="1618" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
+<circle cx="1036" cy="1332" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
+<circle cx="1088" cy="1176" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
+<circle cx="1114" cy="1540" r="9.5" fill="none" stroke="#2b3238" stroke-width="3"/>
+<circle cx="828" cy="1722" r="9.5" fill="none" stroke="#d22f2f" stroke-width="3"/>
 <text x="1102.0" y="1180.0" font-size="11" text-anchor="start" fill="#16232b" font-weight="bold" paint-order="stroke" stroke="#e8a25a" stroke-width="4">12V +</text>
 <text x="1102.0" y="1232.0" font-size="11" text-anchor="start" fill="#16232b" font-weight="bold" paint-order="stroke" stroke="#e8a25a" stroke-width="4">12V −</text>
 <text x="894.0" y="1336.0" font-size="11" text-anchor="start" fill="#16232b" font-weight="bold" paint-order="stroke" stroke="#e8a25a" stroke-width="4">RX2</text>
@@ -1843,7 +1843,7 @@
 <text x="1180.0" y="1306.0" font-size="13" text-anchor="start" fill="#16232b"> Place the sockets where its pins actually land.</text>
 <text x="1180.0" y="1327.0" font-size="13" text-anchor="start" fill="#16232b">MOSFET: 2 male pins in J1 (PWM, GND) pointing</text>
 <text x="1180.0" y="1348.0" font-size="13" text-anchor="start" fill="#16232b"> down, into a 2-pin socket. 12V and valve wires</text>
-<text x="1180.0" y="1369.0" font-size="13" text-anchor="start" fill="#16232b"> go in its screw terminals. Velcro the other end.</text>
+<text x="1180.0" y="1369.0" font-size="13" text-anchor="start" fill="#16232b"> go in its screw terminals. Mounting tape underneath.</text>
 <text x="1180.0" y="1390.0" font-size="13" text-anchor="start" fill="#16232b">12V in: 2-pin 5 mm screw terminal.</text>
 <text x="1180.0" y="1411.0" font-size="13" text-anchor="start" fill="#16232b">Radar: two 2-pin 5 mm terminals clipped together.</text>
 <text x="1180.0" y="1432.0" font-size="13" text-anchor="start" fill="#16232b"></text>

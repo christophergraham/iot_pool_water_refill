@@ -49,7 +49,7 @@ If you already have a garden hose, take about $30 off.
 | 4 | M3 × 8 mm nylon or brass standoffs + M3 screws | Jaycar | Hold the perfboard | ~$6.00 |
 | 2 | P-clips to suit the valve body + stainless screws | Bunnings | Clamp the valve upright to the outside of the box | ~$6.00 |
 | 1 | Offcut of 90 × 45 timber, about 150 mm | Bunnings / shed | The 45° wedge | $0 (offcut) |
-| 1 | Velcro or double-sided foam pad | Bunnings | Under the MOSFET's free end | ~$5.00 |
+| 1 | Outdoor double-sided mounting tape (3M or similar) | Bunnings | Holds the MOSFET flat on the board | ~$5.00 |
 | 6 | Exterior screws + wall plugs to suit your wall | Bunnings | 4 for the main box, 2 for the wedge | ~$8.00 |
 | | **Boxes and mounting subtotal** | | | **$72.45** |
 

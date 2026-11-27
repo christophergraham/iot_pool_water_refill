@@ -131,10 +131,11 @@ The **valve body stays outside** the box, clamped upright to the box's right sid
 
 1. Inside the box, solder the **1N4001 across the coil's two tabs**, with the **stripe on A**.
 2. MOSFET **OUT+** → tab **A**, MOSFET **OUT−** → tab **B**. Heatshrink both.
-3. Fit wire 2 (12V) to the MOSFET's **VIN+** screw and wire 14 (GND) to **VIN−**.
-4. **Radar:** in the radar box, connect the radar's 5V, GND, TX and RX to the 4-core cable and write down which colour is which. Feed the cable through both glands, then connect it to the board's radar terminal. The terminal is labelled with the **radar's** pin names, so match them name to name: radar TX → **TX**, radar RX → **RX**. (The board crosses them over to the ESP32 for you.)
-5. Mount the radar with its lens **flat against the inside of the lid**. There's no hole for the lens, because the radar reads through the plastic.
-6. **Power lead:** unplug the plugpack. Cut its DC lead **about 10 cm from the small barrel plug**. Slide heatshrink on, feed the long end in through the 12V gland, and rejoin it to the barrel-plug piece **stripe to stripe** (the striped wire is +). Solder, shrink, plug the barrel into the adapter and tighten the gland.
+3. **MOSFET:** with the MOSFET **unplugged and in your hand**, screw in all four wires: wire 2 (12V) to **VIN+**, wire 14 (GND) to **VIN−**, and the two valve wires to **OUT+** and **OUT−**. Tightening off the board means no force goes through its two pins.
+4. Stick a strip of **outdoor double-sided mounting tape** across the whole underside of the MOSFET, plug it into its socket and press it down firmly. The tape carries the module, the pins only carry the signal. To remove it later, unplug the pins and lever it off gently with a flat screwdriver.
+5. **Radar:** in the radar box, connect the radar's 5V, GND, TX and RX to the 4-core cable and write down which colour is which. Feed the cable through both glands, then connect it to the board's radar terminal. The terminal is labelled with the **radar's** pin names, so match them name to name: radar TX → **TX**, radar RX → **RX**. (The board crosses them over to the ESP32 for you.)
+6. Mount the radar with its lens **flat against the inside of the lid**. There's no hole for the lens, because the radar reads through the plastic.
+7. **Power lead:** unplug the plugpack. Cut its DC lead **about 10 cm from the small barrel plug**. Slide heatshrink on, feed the long end in through the 12V gland, and rejoin it to the barrel-plug piece **stripe to stripe** (the striped wire is +). Solder, shrink, plug the barrel into the adapter and tighten the gland.
 
 > **Check:** with the multimeter, confirm 12V IN still shows about **+12V** after rejoining. Measure the radar **TX** terminal to GND: it should be **3.3V or less**. If it reads about 5V, unplug and ask before going further, as the ESP32's pins are 3.3V only. In Home Assistant, **Distance** shows a steady number when the radar box points at the floor.
 
